@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <title>Survey</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">COVID-19</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Maps</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="#">Survey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+<img src="logo.jpg" width="200" height="200" >
+ 
+  <div class="container">
+    <header class="header">
+      <h3>เเบบสอบถามสำหรับคัดกรองโรคไวรัสโคโรนา (COVID-19)</h3>
+      <p1>(SCREENING QUESTIONNAIRE COVID-19)</p1>
+    </header></div>
+    
+      <main class="main">
+    <h6>ขอความร่วมมือท่านให้ข้อมลที่ถูกต้องเป็นความจริง เพื่อประโยชน์ในการรักษาเเละป้องกันการกระจายเชื้อ</h6>
+    <h6>We need your help in providing the most accurate and truthful medical statement in order for us to treat and prevent spreading of the disease effectively.</h6>
+  </main>
+    
+    
+  <div class="container  p-3 my-3 border">
+    <p></p>
+ <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" required name="name" class="form-control" id="inputname" placeholder="Name/ชื่อ">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" required name="lname" class="form-control" id="inputlname" placeholder="Lastname/นามสกุล">
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="text"  pattern="[0-9]{3}[0-9]{7}" required name="tel" class="form-control" id="inputtel" placeholder="tel./โทร">
+  </div>
+  <div class="form-group">
+    <input type="text"  pattern="[0-9]{13}"  required name="id" class="form-control" id="inputid" placeholder="National ID/เลขบัตรประจำตัวประชาชน">
+  </div>
+
+    <div class="container  p-3 my-3 border">
+      <p>ในปัจจุบันคุณมีอาการดังต่อไปนี้หรือไม่ โปรดระบุ : 
+        <br>(Do you currently have any of the following symotoms? Tick all that apply:)
+      </p>
+<table>
+  <tr>
+    <td>1.ไอ/เจ็บคอ (Cough/Sore Throat)</td>
+    <td><div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+    </div></td>
+    
+  </tr>
+  <tr>
+    <td>2.มีน้ำมูก (Runny Nose)</td>
+    <td><div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+    </div></td>
+   
+  </tr>
+  <tr>
+    <td>3.หายใจเหนื่อย หรือ หายใจลำบาก (Shortness of Breath/Difficulty breathing)</td>
+    <td><div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+    </div></td>
+    
+  </tr>
+  <tr>
+    <td>4.คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนเเอลง<br>
+      (Do you have any existing condition which weakens your immune system?)    </td>
+    <td><div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+    </div></td>
+  </tr>
+</table>
+    </div>
+
+    <div class="container p-3 my-3 border">
+      <p>ในช่วง 14 วันที่ผ่านมาคุณเดินทาง หรือ เเวะผ่านในประเทศ*ใดๆ ด้านล่างหรือไม่? โปรดระบุ :
+      <br>(During last 14 days, have you travelled from or transited in any country*below? Please specify)
+      </p>
+
+<table>
+  <tr>
+    <td>
+      
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">China(จีน)</label>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Marcao(มาเก๊า)</label>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+              <label class="form-check-label" for="inlineCheckbox3">Hong Kong(ฮ่องกง)</label>
+            </div>
+          </div>
+       
+      </div><br>
+      
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+              <label class="form-check-label" for="inlineCheckbox3">South Korea(เกาหลีใต้)</label>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+              <label class="form-check-label" for="inlineCheckbox3">Italy(อิตาลี)</label>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+              <label class="form-check-label" for="inlineCheckbox3">Iran(อิหร่าน)</label>
+            </div>
+          </div>
+        </div>
+  </td>
+    <td>
+      <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+    </div><br><br>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+    </div>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div class="container p-3 my-3 border">
+  <table>
+    <tr>
+      <td>
+        <p>ในช่วง 14 วันที่ผ่านมาคุณสัมผัสใกล้ชิดกับคนที่มาจากพื้นที่ที่มีรายงานการระบาดต่อเนื่อง
+        <br>       ของโรค COVID-19 
+  หรือ มีประวัติใกล้ชิด หรือ สัมผัสกับผู้ป่วยเข้าข่าย หรือ ยืนยัน โรคติดเชื้อ COVID-19 หรือไม่  <br>
+  (During last 14 days, have you close contact those who came back the area affected 
+   <br> by the outbreaks of COVID-19 or history of close contact with a confirmed case 
+   <br> COVID-19 infection?)
+</p>
+      </td>
+      <td>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">ใช่/Yes</label>
+        </div><br><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" required type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">ไม่ใช่/No</label>
+        </div>
+      </td>
+    </tr>
+
+  </table>
+</div>
+<p>
+  หมายเหตุ : รายชื่อประเทศอาจเปลี่ยนเเปลงได้ตามประกาศหรือเเนวทางล่าสุดของกระทรวงสาธารณสุขหรือหน่วยงานราชการอื่น
+  <br> (Note: List of the affected countries is subject to change following the updated notification and/or guidelines issued by the Ministry of Public Health 
+   <br> and/or other government agencies.)
+</p>
+
+
+<br>
+<button type="submit" class="btn btn-dark my-1">
+  Submit</button>
+  <button type="reset" class="btn btn-dark my-1">Reset</button>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $("#mainform").submit(function (event) {
+          console.log("submitted");
+          if ($("#mainform")[0].checkValidity() == false) {
+            event.preventDefault();
+          }
+          $("#mainform").addClass("was-validated");
+        })
+
+
+      })
+    </script>
+  
+  </body>
+</html>

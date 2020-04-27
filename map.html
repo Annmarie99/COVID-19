@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MAP</title>
+  <link rel="icon" href="">
+
+  <link href="https://unpkg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+  <link rel="stylesheet" href="css/grid12.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+  <link rel="stylesheet" href="vendors/animate-css/animate.css">
+  <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
+  <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    .mapael .mapTooltip {
+      position: absolute;
+      background-color: #474c4b;
+      /*moz-opacity: 0.70;*/
+      opacity: 0.70;
+      filter: alpha(opacity=70);
+      border-radius: 10px;
+      padding: 10px;
+      z-index: 1000;
+      max-width: 200px;
+      display: none;
+      color: #fff;
+    }
+  </style>
+
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#">Maps</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="survay.html">Survey</a>
+              </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+  <section class="home_banner_area">
+    <div class="container box_1620">
+      <div class="banner_inner d-flex align-items-center">
+
+
+        <div class="container-fluid">
+          <div class="cases d-flex flex-row">
+            <div class="map col-8"></div>
+            <div class="areaLegend col-4"></div>
+            <div class="plotLegend" style="margin-left:-430px; margin-top: 250px;"></div>
+          </div>
+        </div>
+
+        <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/raphael@2.3.0/raphael.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-mousewheel@3.1.13/jquery.mousewheel.min.js"></script>
+        <!-- github.com/neveldo/jQuery-Mapael -->
+        <script src="asset/mapael/jquery.mapael.js"></script>
+        <script src="asset/mapael/maps/world_countries_mercator.min.js"></script>
+        <script src="asset/dataset.js"></script>
+        <script>
+          $(".cases").mapael({
+            map: {
+              name: "world_countries_mercator",
+              defaultArea: {
+                attrs: {
+                  stroke: "#fff",
+                  "stroke-width": 1
+                }
+              }
+            },
+            legend: {
+              area: {
+                display: true,
+                title: "Territory deaths 1/4/2020",
+                slices: deathLegendAreaColors
+              },
+              plot: {
+                display: true,
+                title: "Region deaths 1/4/2020",
+                slices: deathLegendPlotColors
+              }
+            },
+            plots: deathCityPlots,
+            areas: deathCountryAreas
+          });
+        </script>
+
+      </div>
+</body>
+
+</html>
+<div class="row mt-5">
+  <div class="col">
+    
+    <a style="margin-left: 29rem;" class="btn btn-dark btn-lg" href="index.html" role="button"> BACK TO HOME</a>
+
+  </div>
+</div>
